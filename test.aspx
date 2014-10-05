@@ -11,7 +11,7 @@
     <center>
     <div style="margin-top:10%;width:600px; text-align:center">
     
-<a href="http://mysite.helpdocsonline.com">link to your HelpIQ site</a>
+<a href="http://mysite.helpdocsonline.com/">link to your HelpIQ site</a>
     
     </div>
     </center>

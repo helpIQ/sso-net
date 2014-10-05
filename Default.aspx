@@ -4,30 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sample Application</title>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-     <div style="width:600px; margin:0 auto; padding-top:100px">
-     <asp:HiddenField ID="site"  runat="server" />
-    <asp:HiddenField ID="return_page"  runat="server" />
-    <table width="100%">
-      <tr>
-        <td width="21%">username:</td>
-        <td width="79%"><asp:TextBox ID="username" runat="server"></asp:TextBox></td>
-      </tr>
-      <tr>
-        <td>password:</td>
-        <td><asp:TextBox ID="password" runat="server" TextMode="Password"/></td>
-      </tr>
-      <tr>
-        <td>&nbsp;</td>
-        <td>
-            <asp:Button ID="login" runat="server" Text="login" onclick="login_Click" /></td>
-      </tr>
-    </table>
-    </div>
+    <div style="width: 600px; margin: 0 auto; padding-top: 100px; text-align: center">
+        <a href="login.aspx">Log In</a>
     </div>
     </form>
 </body>
