@@ -98,7 +98,13 @@ public partial class helpiq_auth : System.Web.UI.Page
             if (!logged_out && this.helpiq_check_local_session())
             {
                 // if the end-user has logged in the customer's website/web application, call HelpIQ to estbalish a session
-                redirect_url = this.helpiq_remote_url + "?hash=" + this.helpiq_md5_hash(this.helpiq_api_key) + "&" + url_params;
+                redirect_url = this.helpiq_remote_url + "?api_key=" + this.helpiq_md5_hash(this.helpiq_api_key) + "&" + url_params;
+				// parameter site_access: this defines which sites are allowed, separate multiple sites by comma
+				// If no value is set and the parameter is not included then we allow access to all sites. 
+				// If the parameter is set, then we only allow access to whatever sites are included
+				// If the user tries to go to a site they do not have permission we just take them to a site they do have permission
+				//string site_access = 'X,X';
+				//redirect_url += "&site_access=" + site_access;
             }
             else
             {
